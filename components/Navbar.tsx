@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import CustomButton from './CustomButton'
+import { CustomButton } from './'
 
 const Navbar = () => {
 	return (
