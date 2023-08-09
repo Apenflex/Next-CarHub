@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { footerLinks } from '@/constants'
+import { footerLinks } from '@/utils/constants'
 
 const Footer = () => {
 	return (
@@ -26,8 +26,8 @@ const Footer = () => {
 						</div>
 					))}
 				</div>
-      </div>
-      
+			</div>
+
 			<div
 				className="mt-10 flex flex-wrap items-center justify-between border-t border-gray-100 
           px-6 py-10 sm:px-16"
