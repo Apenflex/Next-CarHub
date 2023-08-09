@@ -37,6 +37,24 @@
 }
 /* END: General styles */
 
+/* START: Header styles */
+.header {
+	@apply fixed z-20 w-full bg-white/60
+}
+.nav {
+	@apply mx-auto flex max-w-[1440px] items-center justify-between px-6 py-2 sm:px-16
+}
+.header__menu-btn {
+	@apply inline-flex w-full justify-center rounded-md px-4 py-2 text-base font-bold text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75
+}
+.header__menu-btn-link {
+	@apply absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+}
+.header__menu-btn-auth {
+	@apply text-primary-blue rounded-full bg-white min-w-[130px] hover:bg-primary-blue hover:text-white transition-colors duration-300 ease-in-out
+}
+/* END: Header styles */
+
 /* START: Hero styles */
 .hero {
 	@apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
