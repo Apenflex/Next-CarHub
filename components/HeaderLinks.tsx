@@ -8,8 +8,7 @@ import { HiChevronDown } from 'react-icons/hi2'
 
 import { footerLinks } from '@/utils/constants'
 
-import { CustomButton } from './'
-import Modal from './Modal'
+import { CustomButton, Modal } from './'
 
 const HeaderLinks = () => {
 	const [isModalOpen, setIsModalOpen ] = useState(false)

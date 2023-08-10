@@ -5,8 +5,9 @@ import CustomFilter from './CustomFilter'
 import Footer from './Footer'
 import HeaderLinks from './HeaderLinks'
 import Hero from './Hero'
+import Modal from './Modal'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import SearchManufacturer from './SearchManufacturer'
-
-export { Hero, CustomButton, Navbar, Footer, SearchBar, CustomFilter, SearchManufacturer, CarCard, CarDetails, HeaderLinks }
+import ShowMore from './ShowMore'
+export { Hero, CustomButton, Navbar, Footer, SearchBar, CustomFilter, SearchManufacturer, CarCard, CarDetails, HeaderLinks, Modal, ShowMore }
