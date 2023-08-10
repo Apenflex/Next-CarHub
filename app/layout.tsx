@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Toaster } from 'react-hot-toast'
 
 import { Footer, Navbar } from '@/components'
+import ScrollUp from '@/components/ScrollUp'
 
 export const metadata: Metadata = {
 	title: 'Car Hub',
@@ -15,7 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="en">
 			<body className="relative">
 				<Toaster />
-        <Navbar />
+				<Navbar />
+				<ScrollUp />
           {children}
         <Footer />
       </body>

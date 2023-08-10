@@ -11,6 +11,7 @@ const CustomButton = ({
 	textStyles,
 	rightIcon,
 	isDisabled,
+	children,
 	handleClick,
 }: CustomButtonProps) => {
 	return (
@@ -21,6 +22,7 @@ const CustomButton = ({
 					<Image src={rightIcon} alt="right-icon" fill className="object-contain" />
 				</div>
 			)}
+			{children}
 		</button>
 	)
 }

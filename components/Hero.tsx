@@ -1,11 +1,20 @@
 'use client'
 
 import Image from 'next/image'
+import { useRef } from 'react'
 
 import { CustomButton } from './'
-
 const Hero = () => {
-	const handleScroll = () => {}
+	const heroRef = useRef<HTMLDivElement>(null)
+
+	const handleScroll = () => {
+		const nextSection = document.getElementById('discover')
+
+		if (nextSection) {
+			nextSection.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<div className="hero">
 			<div className="padding-x flex-1 pt-36">
