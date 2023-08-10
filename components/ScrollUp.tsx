@@ -21,7 +21,7 @@ const ScrollUp = () => {
 	}, [])
 
 	return (
-		<div className="fixed bottom-5 right-5">
+		<div className="fixed z-20 bottom-5 right-5">
 			{isVisible && (
 				<CustomButton
 					btnType="button"
