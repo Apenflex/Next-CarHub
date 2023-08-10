@@ -19,7 +19,11 @@ const Footer = () => {
 						<div key={link.title} className="footer__link">
 							<h3 className="font-bold">{link.title}</h3>
 							{link.links.map((item) => (
-								<Link href={item.url} key={item.title} className="text-gray-500">
+								<Link
+									href={item.url}
+									key={item.title}
+									className="text-gray-500 transition-colors duration-300 hover:text-primary-blue"
+								>
 									{item.title}
 								</Link>
 							))}
@@ -34,10 +38,10 @@ const Footer = () => {
 			>
 				<p className="">@2023 CarHub. All Rights Reserved</p>
 				<div className="footer__copyrights-link">
-					<Link href="/" className="text-gray-500">
+					<Link href="/" className="text-gray-500 transition-colors duration-300 hover:text-primary-blue">
 						Privacy Policy
 					</Link>
-					<Link href="/" className="text-gray-500">
+					<Link href="/" className="text-gray-500 transition-colors duration-300 hover:text-primary-blue">
 						Terms of Use
 					</Link>
 				</div>
